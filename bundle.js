@@ -86,14 +86,26 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./assets/css/style.css":
+/*!******************************!*\
+  !*** ./assets/css/style.css ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./assets/css/style.css?");
+
+/***/ }),
+
 /***/ "./assets/js/script.js":
 /*!*****************************!*\
   !*** ./assets/js/script.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("let $ =__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n\n$(document).ready(function () {\n\t// when a hanburger menu is clicked\n\tlet $ul = $(\".nav__list\"),\n\t\t $menu = $(\".nav__menu\");\n\n\t$($menu).click(function () {\n\t\t// toggle menu-click Class\n\t\t$ul.toggleClass(\"menu-click\");\n\t}); // end click event handler\n});\n\n\n//# sourceURL=webpack:///./assets/js/script.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/style.css */ \"./assets/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_0__);\n\r\nlet $ =__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\r\n\r\n\r\n$(document).ready(function () {\r\n\t// when a hanburger menu is clicked\r\n\tlet $ul = $(\".nav__list\"),\r\n\t\t $menu = $(\".nav__menu\");\r\n\r\n\t$($menu).click(function () {\r\n\t\t// toggle menu-click Class\r\n\t\t$ul.toggleClass(\"menu-click\");\r\n\t}); // end click event handler\r\n});\r\n\n\n//# sourceURL=webpack:///./assets/js/script.js?");
 
 /***/ }),
 
