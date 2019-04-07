@@ -1,15 +1,30 @@
 let path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './assets/js/script.js',
        output: {
           path: path.join(__dirname, 'dist'),
           filename: 'bundle.js',
-          publicPath: './dist'
+          publicPath: './'
        },
        module:{
          rules:[
+            {
+               test: /\.(jpe?g|png|gif|svg)$/,
+               use: [
+                  {
+                     loader: 'url-loader',
+                     options: {
+                        limit: 40000,
+                        outputPath: './images',
+                        publicPath: './images'
+                     }
+                  },
+                  'image-webpack-loader'
+               ]
+            },
             {
                test: /\.css$/,
                use: ExtractTextPlugin.extract({
