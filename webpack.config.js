@@ -27,5 +27,8 @@ module.exports = {
       },
    plugins: [
          new ExtractTextPlugin('css/style.css'),
+         new HtmlWebpackPlugin({
+            template: 'assets/index.html',
+         })
       ]
     }
