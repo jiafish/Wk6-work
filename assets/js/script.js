@@ -1,3 +1,4 @@
+import '../css/style.css';
 let $ =require('jquery');
 
 
